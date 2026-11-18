@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 — Tezlik, Texnologiya va G‘alaba Olami</title>
+    <meta name="description" content="Formula 1 rasmiy musobaqalari, poyga avtomobillari, ilg'or texnologiyalar va motorsport olamining eng so'nggi yangiliklari bilan tanishing.">
+    <meta property="og:title" content="Formula 1 — Professional Motorsport Landing Page">
+    <meta property="og:description" content="Chegaralarni unut. Tezlikni his qil. Kelajak poygasiga xush kelibsan.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-f">F</span><span class="logo-1">1</span>
+                <span class="logo-text">TURBO</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Bosh sahifa</a></li>
+                    <li><a href="#cars" class="nav-link">Avtomobillar</a></li>
+                    <li><a href="#tech" class="nav-link">Texnologiyalar</a></li>
+                    <li><a href="#stats" class="nav-link">Statistika</a></li>
+                    <li><a href="#races" class="nav-link">Musobaqalar</a></li>
+                    <li><a href="#circuits" class="nav-link">Galereya</a></li>
+                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-primary-header">Chipta olish</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-content container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-flag-checkered"></i> 2026-Mavsum Rasmiy Taqdimoti
+            </div>
+            <h1 class="hero-title">TEZLIK. <span class="accent">ANIQLIK.</span> G‘ALABA.</h1>
+            <p class="hero-subtitle">Chegaralarni unut. Tezlikni his qil. Kelajak poygasiga xush kelibsan.</p>
+            <div class="hero-buttons">
+                <a href="#cars" class="btn-red"><i class="fa-solid fa-car"></i> Avtomobillarni ko‘rish</a>
+                <a href="#tech" class="btn-outline"><i class="fa-solid fa-bolt"></i> F1 olamiga kirish</a>
+            </div>
+            <div class="hero-speed-indicator">
+                <div class="speed-bar"></div>
+                <span class="speed-value">372 km/s</span>
+                <span class="speed-label">Maksimal Rekord Tezlik</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Poyga Mashinalari</span>
+                <h2 class="section-title">FORMULA 1 <span class="accent">JAMOALARI</span></h2>
+                <p class="section-desc">Dunyodagi eng kuchli muhandislik namunalari va elit poyga avtomobillari.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Barchasi</button>
+                <button class="filter-btn" data-filter="ferrari">Ferrari</button>
+                <button class="filter-btn" data-filter="mercedes">Mercedes</button>
+                <button class="filter-btn" data-filter="redbull">Red Bull</button>
+                <button class="filter-btn" data-filter="mclaren">McLaren</button>
+                <button class="filter-btn" data-filter="aston">Aston Martin</button>
+            </div>
+
+            <!-- Cars Grid -->
+            <div class="cars-grid">
+                <!-- Card 1 -->
+                <div class="car-card" data-category="ferrari">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541348263662-e0626628d0cf?auto=format&fit=crop&w=800&q=80" alt="Ferrari F1" loading="lazy">
+                        <span class="team-badge">Scuderia Ferrari</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Ferrari SF-26</h3>
+                        <p>Afsonaviy italyancha quvvat va yangi avlod aerodinamik innovatsiyalari uyg'unligi.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 360 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 1010 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('Ferrari SF-26', 'Scuderia Ferrari', '360 km/s', '1010 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1541348263662-e0626628d0cf?auto=format&fit=crop&w=1200&q=80', 'Ferrari jamoasining eng so\'nggi muhandislik yutug\'i bo\'lgan SF-26 modeli o\'ta yengil karbon karkas va yuqori samarali gibrid dvigatel bilan jihozlangan.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="car-card" data-category="mercedes">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Mercedes F1" loading="lazy">
+                        <span class="team-badge">Mercedes-AMG</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes-AMG W17</h3>
+                        <p>Olmon aniqligi va cheksiz tezlik uyg'unlashgan poyga mashinasi.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 355 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 1005 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('Mercedes-AMG W17', 'Mercedes-AMG Petronas', '355 km/s', '1005 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80', 'Ajoyib barqarorlik va ERS energiya qayta tiklash tizimining mukammal ishlashi W17 modelini trassadagi eng qo\'rqinchli raqibga aylantiradi.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="car-card" data-category="redbull">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Red Bull Racing" loading="lazy">
+                        <span class="team-badge">Red Bull Racing</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Red Bull RB22</h3>
+                        <p>Chempionlar tanlovi. Aerodinamik jihatdan mukammal ishlangan bolid.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 365 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 1020 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('Red Bull RB22', 'Oracle Red Bull Racing', '365 km/s', '1020 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80', 'RB22 modeli o\'ta o\'tkir burilishlarda va to\'g\'ri chiziqlarda tengsiz tezlikni ta\'minlovchi ilg\'or polverizatsion qanotlar tizimiga ega.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="car-card" data-category="mclaren">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="McLaren F1" loading="lazy">
+                        <span class="team-badge">McLaren F1 Team</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>McLaren MCL40</h3>
+                        <p>Tarixiy an'ana va zamonaviy texnologik ustunlik mahsuli.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 358 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 1012 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('McLaren MCL40', 'McLaren F1 Team', '358 km/s', '1012 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80', 'McLaren o\'zining yorqin ranglari va shassi muvozanati bilan barcha poyga muxlislarini lol qoldirib kelmoqda.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="car-card" data-category="aston">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Aston Martin F1" loading="lazy">
+                        <span class="team-badge">Aston Martin</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Aston Martin AMR26</h3>
+                        <p>Britaniya hashamati va poyga shiddatining mukammal uyg'unligi.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 352 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 1000 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('Aston Martin AMR26', 'Aston Martin Aramco', '352 km/s', '1000 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80', 'Yashil rangdagi hashamatli AMR26 bolidi yuqori darajadagi ishonchlilik va kuchli tormozlanish tizimi bilan ajralib turadi.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="car-card" data-category="williams">
+                    <div class="car-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Williams Racing" loading="lazy">
+                        <span class="team-badge">Williams Racing</span>
+                    </div>
+                    <div class="car-info">
+                        <h3>Williams FW48</h3>
+                        <p>Afsonaviy meros va kelajak sari dadil qadam tashlagan bolid.</p>
+                        <div class="car-specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 350 km/s</span>
+                            <span><i class="fa-solid fa-bolt"></i> 995 ot kuchi</span>
+                        </div>
+                        <button class="btn-details" onclick="openCarModal('Williams FW48', 'Williams Racing', '350 km/s', '995 ot kuchi', '1.6L V6 Turbo Hybrid', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80', 'Williams jamoasi o\'zining boy tarixi va yangilangan texnik bazasi bilan yuqori marralar sari intilmoqda.')">Batafsil ko'rish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tech" class="tech-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Innovatsiya</span>
+                <h2 class="section-title">FORMULA 1 <span class="accent">TEXNOLOGIYALARI</span></h2>
+                <p class="section-desc">Poyga mashinalarini kosmik kema darajasiga olib chiquvchi ilg'or tizimlar.</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h3>Aerodinamika</h3>
+                    <p>Havo oqimlarini boshqarish va pastga bosim (downforce) hosil qilish orqali burilishlarda maksimal tezlikni ta'minlaydi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-engine"></i></div>
+                    <h3>Gibrid Quvvat Tizimi</h3>
+                    <p>1.6 litrli turbo V6 dvigatel va zamonaviy elektr motorlar birgalikda 1000 ot kuchidan ortiq quvvat beradi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-battery-full"></i></div>
+                    <h3>ERS Tizimi</h3>
+                    <p>Tormozlanish vaqtida ajralib chiqadigan kinetik va issiqlik energiyasini to'plab, kerak paytda qo'shimcha quvvat beradi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Karbon Tolali Kuzov</h3>
+                    <p>Po'latdan bir necha barobar yengil va mustahkam bo'lib, poygachi xavfsizligini 100% kafolatlaydi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-stop"></i></div>
+                    <h3>Tormoz Tizimi</h3>
+                    <p>Uglerod-uglerodli tormoz disklar qiziganda ham o'z xususiyatini yo'qotmaydi va soniyasiga mashinani to'xtatadi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-circle-dot"></i></div>
+                    <h3>Shinalar Texnologiyasi</h3>
+                    <p>Pirelli slick va wet shinalari o'ta yuqori harorat va yuklamalarga bardosh berib, trassaga yopishishni ta'minlaydi.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>DRS Boshqaruvi</h3>
+                    <p>Orqa qanot flapini ochish orqali to'g'ri chiziqda havo qarshiligini kamaytirib, tezlikni keskin oshiradi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="372">0</div>
+                    <div class="stat-label">Maksimal Tezlik (km/s)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Dvigatel Aylanishi (RPM)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="798">0</div>
+                    <div class="stat-label">Minimal Og'irlik (kg)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1020">0</div>
+                    <div class="stat-label">Ot Kuchi (HP)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Races Section -->
+    <section id="races" class="races-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kalendar</span>
+                <h2 class="section-title">2026-MAVSUM <span class="accent">MUSOBAQALARI</span></h2>
+                <p class="section-desc">Dunyoning eng mashhur trassalaridagi hayajonli poygalar jadvali.</p>
+            </div>
+
+            <!-- Countdown Timer Component -->
+            <div class="countdown-banner">
+                <div class="countdown-info">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>Keyingi Grand-Pri Startigacha Qolgan Vaqt:</span>
+                </div>
+                <div class="countdown-timer" id="countdown">
+                    <div class="time-box"><span id="days">00</span><small>Kun</small></div>
+                    <span class="colon">:</span>
+                    <div class="time-box"><span id="hours">00</span><small>Soat</small></div>
+                    <span class="colon">:</span>
+                    <div class="time-box"><span id="minutes">00</span><small>Daqiqa</small></div>
+                    <span class="colon">:</span>
+                    <div class="time-box"><span id="seconds">00</span><small>Soniya</small></div>
+                </div>
+            </div>
+
+            <div class="races-grid">
+                <div class="race-card">
+                    <div class="race-date"><i class="fa-solid fa-calendar-days"></i> 22 Mart, 2026</div>
+                    <h3>Bahrayn Grand-Prisi</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Sakhir trassasi, Bahrayn</p>
+                    <p class="race-desc">Mavsumning ochilish bahsi va tun yorug'idagi shiddatli poyga.</p>
+                </div>
+                <div class="race-card">
+                    <div class="race-date"><i class="fa-solid fa-calendar-days"></i> 5 Aprel, 2026</div>
+                    <h3>Saudiya Arabistoni Grand-Prisi</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Jeddah Corniche trassasi</p>
+                    <p class="race-desc">Dunyodagi eng tezkor shahar ko'cha trassalaridan biri.</p>
+                </div>
+                <div class="race-card">
+                    <div class="race-date"><i class="fa-solid fa-calendar-days"></i> 24 May, 2026</div>
+                    <h3>Monako Grand-Prisi</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Monte-Karlo trassasi</p>
+                    <p class="race-desc">Motorsport olamidagi eng nufuzli va qiyin sinov.</p>
+                </div>
+                <div class="race-card">
+                    <div class="race-date"><i class="fa-solid fa-calendar-days"></i> 5 Iyul, 2026</div>
+                    <h3>Buyuk Britaniya Grand-Prisi</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Silverstone, Angliya</p>
+                    <p class="race-desc">Tezkor burilishlari bilan mashhur afsonaviy poyga stadioni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circuits Gallery Section -->
+    <section id="circuits" class="circuits-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trassalar</span>
+                <h2 class="section-title">AFSONAVIY <span class="accent">TREKLAR</span></h2>
+                <p class="section-desc">Formula 1 tarixi yaratilgan muqaddas poyga yo'laklari.</p>
+            </div>
+
+            <div class="circuits-grid">
+                <div class="circuit-card" onclick="openCircuitModal('Monako Trassasi', 'Monako', 'Tor ko\'chalar, to\'siqlar va xato kechirmaydigan dunyodagi eng mashhur shahar trassasi.', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Monako" loading="lazy">
+                    <div class="circuit-content">
+                        <h3>Monako</h3>
+                        <span>Monte-Karlo</span>
+                    </div>
+                </div>
+                <div class="circuit-card" onclick="openCircuitModal('Silverstone Trassasi', 'Buyuk Britaniya', 'Yuqori tezlikdagi Maggots va Becketts burilishlari bilan tanilgan zamonaviy poyga majmuasi.', 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80" alt="Silverstone" loading="lazy">
+                    <div class="circuit-content">
+                        <h3>Silverstone</h3>
+                        <span>Buyuk Britaniya</span>
+                    </div>
+                </div>
+                <div class="circuit-card" onclick="openCircuitModal('Monza Trassasi', 'Italiya', 'Tezlik ibodatxonasi deb ataladigan, bolidlar maksimal quvvatda harakatlanadigan afsonaviy trek.', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Monza" loading="lazy">
+                    <div class="circuit-content">
+                        <h3>Monza</h3>
+                        <span>Italiya</span>
+                    </div>
+                </div>
+                <div class="circuit-card" onclick="openCircuitModal('Suzuka Trassasi', 'Yaponiya', 'Sakkiz raqami shaklidagi noyob trassa bo\'lib, chinakam mahoratni talab qiladi.', 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Suzuka" loading="lazy">
+                    <div class="circuit-content">
+                        <h3>Suzuka</h3>
+                        <span>Yaponiya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery & Lightbox Section -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Lahzalar</span>
+                <h2 class="section-title">F1 FOTO <span class="accent">GALEREYA</span></h2>
+                <p class="section-desc">Poyga shiddati, pit-stop jamoasi va g'alaba zavqi.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80" alt="F1 Car 1" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1541348263662-e0626628d0cf?auto=format&fit=crop&w=800&q=80" alt="F1 Car 2" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="F1 Car 3" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="F1 Car 4" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="F1 Car 5" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="F1 Car 6" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Atmoshfera</span>
+                <h2 class="section-title">RASMIY F1 <span class="accent">VIDEO PREMYERA</span></h2>
+                <p class="section-desc">Dvigatellar gurillashi va trassadagi hayajonni his eting.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <div class="video-poster" id="videoPoster" style="background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80');">
+                    <button class="play-btn" id="playVideoBtn"><i class="fa-solid fa-play"></i></button>
+                    <h3>Formula 1 2026 Mavsum Teizeri</h3>
+                </div>
+                <div class="video-container-iframe" id="videoContainer">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/W90Z8k3-bY8?si=demo" title="F1 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Muxlislar Fikri</span>
+                <h2 class="section-title">EKSPERT VA <span class="accent">MUXLISLAR</span></h2>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Formula 1 — bu shunchaki poyga emas, bu haqiqiy texnologik san'at. Sayt dizayni va atmosferasi kishini darhol hayajonga soladi!"</p>
+                        <h4>Jasur Rahimov</h4>
+                        <span>F1 Ishqibozi</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Mashinalarning texnik tavsiflari va interaktiv elementlar juda professional ishlangan. Haqiqiy F1 muxlisi uchun mukammal sayt."</p>
+                        <h4>Malika Karimova</h4>
+                        <span>Motorsport Blogeri</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Har bir detay o'ylab chiqilgan. Ayniqsa countdown timer va animatsiyalar saytga o'zgacha futuristik tus bergan."</p>
+                        <h4>Sardorbek Tursunov</h4>
+                        <span>Engineering Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button id="prevTestimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="nextTestimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Savol-Javob</span>
+                <h2 class="section-title">KO‘P BERILADIGAN <span class="accent">SAVOLLAR</span></h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Formula 1 nima?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Formula 1 — Xalqaro avtomobil federatsiyasi (FIA) tomonidan o'tkaziladigan eng yuqori darajadagi ochiq g'ildirakli bir o'rindiqli poyga chempionati.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Formula 1 avtomobillari qanchalik tez?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>F1 bolidlari to'g'ri chiziqda 370 km/s dan ortiq tezlikka erisha oladi va soniyalar ichida 0 dan 100 km/s tezlikka chiqadi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>DRS nima?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DRS (Drag Reduction System) — orqa qanotni ochish orqali havo qarshiligini kamaytirib, to'g'ri chiziqda quvib o'tishni osonlashtiradigan tizim.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ERS qanday ishlaydi?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ERS (Energy Recovery Systems) tormozlanish va turbinadan chiqadigan issiqlik energiyasini elektr quvvatiga aylantirib batareyada saqlaydi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Bog'lanish</span>
+                <h2 class="section-title">BIZ BILAN <span class="accent">BOG'LANISH</span></h2>
+                <p class="section-desc">Savollaringiz bormi yoki hamkorlik qilmoqchimisiz? Bizga yozing.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Ism va familiya *</label>
+                        <input type="text" id="name" placeholder="Ismingizni kiriting">
+                        <small class="error-msg" id="nameError">Iltimos, ismingizni kiriting.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email manzil *</label>
+                        <input type="email" id="email" placeholder="example@domain.com">
+                        <small class="error-msg" id="emailError">Iltimos, to'g'ri email manzil kiriting.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon raqami *</label>
+                        <input type="tel" id="phone" placeholder="+998 90 123 45 67">
+                        <small class="error-msg" id="phoneError">Iltimos, telefon raqamingizni kiriting.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Mavzu *</label>
+                        <input type="text" id="subject" placeholder="Xabar mavzusi">
+                        <small class="error-msg" id="subjectError">Iltimos, mavzuni kiriting.</small>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Xabar *</label>
+                        <textarea id="message" rows="5" placeholder="Xabaringizni yozing..."></textarea>
+                        <small class="error-msg" id="messageError">Iltimos, xabar matnini kiriting.</small>
+                    </div>
+                    <button type="submit" class="btn-red full-width">Xabarni yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#hero" class="logo">
+                    <span class="logo-f">F</span><span class="logo-1">1</span>
+                    <span class="logo-text">TURBO</span>
+                </a>
+                <p>Dunyoning eng ilg'or motorsport platformasi. Tezlik, adrenalin va zamonaviy texnologiyalar olami.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Tezkor havolalar</h4>
+                <ul>
+                    <li><a href="#hero">Bosh sahifa</a></li>
+                    <li><a href="#cars">Avtomobillar</a></li>
+                    <li><a href="#tech">Texnologiyalar</a></li>
+                    <li><a href="#races">Musobaqalar</a></li>
+                    <li><a href="#contact">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kategoriyalar</h4>
+                <ul>
+                    <li><a href="#cars">Ferrari F1</a></li>
+                    <li><a href="#cars">Mercedes-AMG</a></li>
+                    <li><a href="#cars">Red Bull Racing</a></li>
+                    <li><a href="#cars">McLaren F1</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Aloqa Markazi</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Toshkent shahri, O'zbekiston</p>
+                <p><i class="fa-solid fa-phone"></i> +998 71 200 00 00</p>
+                <p><i class="fa-solid fa-envelope"></i> info@f1turbo.uz</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 F1 Turbo. Barcha huquqlar himoyalangan. Demo loyiha.</p>
+                <a href="#hero" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Car Detail Modal -->
+    <div class="modal" id="carModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCarModal()">&times;</span>
+            <div class="modal-grid">
+                <img id="modalCarImg" src="" alt="Car">
+                <div class="modal-details">
+                    <span id="modalTeamBadge" class="team-badge"></span>
+                    <h2 id="modalCarTitle"></h2>
+                    <p id="modalCarDesc"></p>
+                    <div class="modal-specs">
+                        <div><strong>Maksimal tezlik:</strong> <span id="modalCarSpeed"></span></div>
+                        <div><strong>Quvvat:</strong> <span id="modalCarPower"></span></div>
+                        <div><strong>Dvigatel:</strong> <span id="modalCarEngine"></span></div>
+                    </div>
+                    <button class="btn-red" onclick="closeCarModal()">Yopish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circuit Detail Modal -->
+    <div class="modal" id="circuitModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCircuitModal()">&times;</span>
+            <div class="modal-grid">
+                <img id="modalCircuitImg" src="" alt="Circuit">
+                <div class="modal-details">
+                    <span class="team-badge" id="modalCircuitCountry"></span>
+                    <h2 id="modalCircuitTitle"></h2>
+                    <p id="modalCircuitDesc"></p>
+                    <button class="btn-red" onclick="closeCircuitModal()">Yopish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightboxModal">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <button class="lightbox-nav prev" onclick="prevLightboxImage()"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="lightboxImg" src="" alt="Lightbox image">
+        <button class="lightbox-nav next" onclick="nextLightboxImage()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toastNotification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">Xabaringiz muvaffaqiyatli yuborildi!</span>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="./index.js"></script>
+</body>
+</html>
